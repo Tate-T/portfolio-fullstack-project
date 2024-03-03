@@ -5,3 +5,12 @@ body {
   font-weight: 500;
   color: $main-color;
 }
+
+.container{
+    width: 1406px;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: solid red;
+    margin-left: auto;
+    margin-right: auto;
+}
