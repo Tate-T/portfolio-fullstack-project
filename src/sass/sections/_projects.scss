@@ -1,0 +1,39 @@
+.projects{
+    // margin-top: 20px;
+
+    &__title{
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+        color: $title-color;
+    }
+    &__hashtag-text{
+        font-size: 16px;
+        letter-spacing: -0.02em;
+        color: $text-color;
+    }
+    &__card-title{
+        font-size: 44px;
+        letter-spacing: -0.03em;
+        color: $text-color;
+    }
+    &__card-btn{
+        font-size: 16px;
+        letter-spacing: -0.02em;
+        color: $main-color;
+
+        border-radius: 60px;
+        padding: 18px 50px;
+        background-color: $second-color;
+        border: none;
+    }
+    &__btn{
+        border: 1px solid $title-color;
+        border-radius: 60px;
+        background-color: transparent;
+        width: 68px;
+        height: 68px;
+    }
+}
