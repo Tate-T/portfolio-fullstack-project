@@ -5,27 +5,63 @@
     #69292d 67.73%,
     #ed3b44 100%
   );
+  padding-top: 32px;
 
-  // &__note {
+  &__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  &__box{
+    display: flex;
+    gap: 8px;
+  }
 
-  // }
+  &__img{
+    width: 80px;
+  }
 
   &__menu {
-    font-size: 16px;
-    letter-spacing: -0.02em;
-    text-decoration: underline;
-    text-decoration-skip-ink: none;
-    color: $main-color;
+    display: none;
+    @media screen and (min-width: 768px) {
+      display: block;
+      font-size: 16px;
+      letter-spacing: -0.02em;
+      text-decoration: underline;
+      text-decoration-skip-ink: none;
+      color: $main-color;
+    }
   }
 
   &__btn {
-    font-size: 16px;
-    letter-spacing: -0.02em;
-    color: $main-color;
-    background-color: $second-color;
-    border-radius: 60px;
-    padding: 18px 24px;
-    outline: none;
+    display: none;
+    @media screen and (min-width: 768px) {
+      display: block;
+      font-size: 16px;
+      letter-spacing: -0.02em;
+      color: $main-color;
+      background-color: $second-color;
+      border-radius: 60px;
+      padding: 18px 24px;
+      outline: none;
+      border: none;
+    }
+  }
+  &__menu-btn{
+    background-color: transparent;
     border: none;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+  &__svg{
+    width: 28px;
+    height: 28px;
+    stroke: $main-color;
   }
 }
