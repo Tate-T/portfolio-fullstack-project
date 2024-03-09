@@ -1,10 +1,20 @@
 <header class="header">
-    <div class="container">
+    <div class="container header__container">
         <div class="header__box">
-            <!-- <img src="" alt="" class="header__image"> -->
+            <picture>
+                <source srcset="./images/mobile/header-icon@1x.webp 1x, ./images/mobile/header-icon@2x.webp 2x" media="(min-width: 320px)">
+                <source srcset="./images/tablet/header-icon@1x.webp 1x, ./images/tablet/header-icon@2x.webp 2x" media="(min-width: 768px)">
+                <source srcset="./images/desktop/header-icon@1x.webp 1x, ./images/desktop/header-icon@2x.webp 2x" media="(min-width: 1200px)">
+                <img class="header__img" src="./images/mobile/header-icon@1x.webp" alt="logo">
+            </picture>
             <p class="header__note">jefferson*</p>
         </div>
         <a href="./index.html" class="header__menu">Menu</a>
         <button class="header__btn">Order the project</button>
+        <button class="header__menu-btn">
+            <svg class="header__svg">
+                <use href="./images/symbol-defs.svg#icon-header-menu"></use>
+            </svg>
+        </button>
     </div>
 </header>
