@@ -1,26 +1,52 @@
+.reviews { 
+background: #1c1d20;
+}
+
 .reviews__title { 
-    font-family: "Inter Tight SemiBold";
-font-weight: 600;
-font-size: 16px;
-line-height: 150%;
-letter-spacing: -0.02em;
-color: rgba(250, 250, 250, 0.4);
+    font-family: 'Inter Tight SemiBold';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    color: rgba(250, 250, 250, 0.4);
+}
+
+.reviews__list { 
+    display: flex;
+    gap: 16px;
+    margin-top: 32px;
+}
+
+.reviews__item {
+    border: 1px solid rgba(250, 250, 250, 0.2);
+border-radius: 20px;
+padding: 32px 24px;
+width: 332px;
+height: 302px;
+}
+
+.reviews__img { 
+    border-radius: 10px;
+    width: 48px;
+    height: 48px;
 }
 
 .reviews__name { 
-    font-family: "Inter Tight Medium";
-font-weight: 600;
-font-size: 20px;
-line-height: 150%;
-letter-spacing: -0.02em;
-color: white;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    color: var(--main-text);
+    margin-top: 16px;
 }
 
-.reviews__title { 
-    font-family: "Inter Tight Medium";
-font-weight: 500;
-font-size: 16px;
-line-height: 150%;
-letter-spacing: -0.02em;
-color: rgba(250, 250, 250, 0.6);
+.reviews__text { 
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    color: rgba(250, 250, 250, 0.6);  
+    margin-top: 8px;
 }
