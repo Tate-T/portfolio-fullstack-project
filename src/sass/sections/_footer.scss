@@ -1,0 +1,42 @@
+.footer {
+
+    &__title {
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: $main-color;
+  }
+
+  &__title span {
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #ed3b44;
+  }
+
+  &__input::placeholder {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    color: rgba(250, 250, 250, 0.6);
+  }
+
+  &__button {
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    color: $main-color;
+  }
+
+  &__link {
+font-weight: 500;
+font-size: 16px;
+letter-spacing: -0.02em;
+color: var(--main-text);
+  }
+}
