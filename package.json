@@ -1,10 +1,10 @@
 {
-  "name": "food-sta",
+  "name": "portfolio-fullstack-project",
   "version": "2.0.0",
   "description": "",
   "homepage": "https://tate-t.github.io/portfolio-fullstack-project/",
   "scripts": {
-    "start": "parcel src/*.html",
+    "dev": "parcel src/index.html",
     "build": "parcel build src/*.html --public-url /portfolio-fullstack-project/",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
