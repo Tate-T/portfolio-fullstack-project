@@ -1,0 +1,53 @@
+.advertising {
+    background-color: #1c1d20;
+    padding-top: 62px;
+    padding-bottom: 62px;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 164px;
+        padding-bottom: 164px;
+    }
+
+    &__content {
+        height: 508px;
+        min-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(../images/mobile/advertising-bg@1x.webp);
+    
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/mobile/advertising-bg@2x.webp);
+        }
+    
+        @media screen and (min-width: 768px) {
+            height: 960px;
+            background-image: url(../images/tablet/advertising-bg@1x.webp);
+    
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url(../images/tablet/advertising-bg@2x.webp);
+            }
+        }
+    
+        @media screen and (min-width: 1200px) {
+            background-image: url(../images/desktop/advertising-bg@1x.webp);
+
+    
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url(../images/desktop/advertising-bg@2x.webp);
+            }
+        }
+    }
+}
