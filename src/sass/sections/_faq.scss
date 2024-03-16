@@ -1,0 +1,40 @@
+.faq {
+    background-color: #1c1d20;
+    overflow: hidden;
+
+    &__title {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+        color: $title-color;
+        margin-bottom: 32px;
+    }
+
+    &__paragraph {
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.35s;
+    }
+
+    &__text{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: -0.02em;
+        color: $title-color;
+    }
+
+    &__item input:checked ~ .faq__paragraph {
+        max-height: 100px;
+    }
+
+    &__subtitle {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 150%;
+        letter-spacing: -0.02em;
+        color: $main-color;
+    }
+}
