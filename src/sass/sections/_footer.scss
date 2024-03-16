@@ -8,8 +8,12 @@
     padding-bottom: 169px;
   }
 
-  @media screen and (min-width: 1200px) {
-    padding: 88px 164px 169px 164px;
+  &__container {
+    
+    @media screen and (min-width: 1200px) {
+      outline: solid blue;
+      padding: 88px 164px 169px 164px;
+    }
   }
 
   &__title-box {
