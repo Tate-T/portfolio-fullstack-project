@@ -10,7 +10,13 @@
       </h3>
     </li>
     <li class="about-item">
-      <img class="about__img" src="./images/about-character.png" alt="me" />
+      <picture>
+        <source srcset="./images/desktop/man@1x.webp 1x, ./images/desktop/man@2x.webp 2x" media="(min-width: 1200px)">
+        <source srcset="./images/tablet/man@1x.webp 1x, ./images/tablet/man@2x.webp 2x" media="(min-width: 768px)">
+        <source srcset="./images/mobile/man@1x.webp 1x, ./images/mobile/man@2x.webp 2x" media="(min-width: 320px)">
+        <img class="about__img" src="./images/about-character.png" alt="me" />
+      </picture>
+
     </li>
   </ul>
 </div>

@@ -11,9 +11,10 @@
 
     &__item:nth-child(1) {
         background-color: #242527;
-        width: 680px;
+        // width: 680px;
         height: 700px;
         border-radius: 24px;
+        
 
     }
 
@@ -34,8 +35,6 @@
         letter-spacing: -0.03em;
         text-transform: uppercase;
         color: rgb(255, 255, 255);
-        padding-top: 70px;
-        padding-left: 65px;
         width: 602px;
     }
 }
@@ -46,4 +45,105 @@
 
 .gray-title {
     color: rgb(131, 131, 131);
+}
+
+@media screen and (min-width:320px) {
+
+    .about__list {
+        flex-direction: column;
+    }
+
+    .about__item:nth-child(1) {
+        width: 100%;
+        height: 500px;
+        padding: 32px 32px 272px 32px;
+    }
+
+    .about__img {
+        display: block;
+        width: 100%;
+        height: 500px;
+        max-width: 100%;
+    }
+
+    .about__title {
+        font-family: "Inter Tight";
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 28px;
+        letter-spacing: -0.72px;
+        text-transform: uppercase;
+        max-width: 279px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .about__list {
+        flex-direction: column;
+    }
+
+    .about__item:nth-child(1) {
+        width: 704px;
+        height: 700px;
+        padding: 64px 64px 436px 64px;
+    }
+
+    .about__img {
+        width: 704px;
+        height: 700px;
+    }
+
+    .about__title {
+        font-family: "Inter Tight";
+        font-size: 38px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 40px; 
+        letter-spacing: -1.14px;
+        text-transform: uppercase;
+        max-width: 576px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .about {
+        background-color: #1C1D20;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    
+        &__list {
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+        }
+    
+        &__item:nth-child(1) {
+            background-color: #242527;
+            // width: 680px;
+            height: 700px;
+            border-radius: 24px;
+            
+    
+        }
+    
+        &__item:nth-child(2) {
+            width: 680px;
+            height: 700px;
+        }
+    
+        &__img {
+            border-radius: 24px;
+        }
+    
+        &__title {
+            font-family: "Inter Tight";
+            font-weight: 500;
+            font-size: 38px;
+            line-height: 105%;
+            letter-spacing: -0.03em;
+            text-transform: uppercase;
+            color: rgb(255, 255, 255);
+            width: 602px;
+        }
+    }
 }
