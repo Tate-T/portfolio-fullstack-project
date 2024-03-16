@@ -1,10 +1,23 @@
 .skills{
     background-color: #1C1D20;
-}
 
-.skills-text{
+&__text{
     font-family: 'Inter Tight';
     font-weight: 500;
     font-size: 20px;
     letter-spacing: -0.02em;
+    text-align: center;
+    margin-top: 85px;
+}
+
+&__text-border{
+    border: 1px solid rgba(250, 250, 250, 0.2);;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+&__list{
+    display: flex;
+}
 }
