@@ -5,9 +5,9 @@
     padding: 96px 0;
   }
 
-	@media screen and (min-width: 1200px) {
-		padding: 164px 0;
-	}
+  @media screen and (min-width: 1200px) {
+    padding: 164px 0;
+  }
 
   background-color: #1c1d20;
 
@@ -58,13 +58,25 @@
     background-color: #242527;
   }
 
-  &__icon {
+  &__background {
     width: 48px;
     height: 48px;
     border-radius: 10px;
     margin: 0 0 64px;
 
     background-color: #ed3b44;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+
+    stroke: #fafafa;
+    fill: transparent;
   }
 
   &__subtitle {
