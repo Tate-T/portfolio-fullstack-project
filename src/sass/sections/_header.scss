@@ -1,33 +1,33 @@
 .header {
-  background: linear-gradient(
-    -90deg,
-    #1c1d20 49.68%,
-    #69292d 67.73%,
-    #ed3b44 100%
-  );
+  background: linear-gradient(-90deg,
+      #1c1d20 49.68%,
+      #69292d 67.73%,
+      #ed3b44 100%);
   padding-top: 32px;
-  position: fixed;
+  position: absolute;
   right: 0;
   left: 0;
-  z-index: 999;
+  z-index: 1;
 
 
-  &__container{
+  &__container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
   }
-  &__box{
+
+  &__box {
     display: flex;
     gap: 8px;
   }
 
-  &__img{
+  &__img {
     width: 80px;
   }
 
   &__menu {
     display: none;
+
     @media screen and (min-width: 768px) {
       display: block;
       font-size: 16px;
@@ -40,6 +40,7 @@
 
   &__btn {
     display: none;
+
     @media screen and (min-width: 768px) {
       display: block;
       font-size: 16px;
@@ -52,7 +53,8 @@
       border: none;
     }
   }
-  &__menu-btn{
+
+  &__menu-btn {
     background-color: transparent;
     border: none;
     width: 28px;
@@ -60,11 +62,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
     @media screen and (min-width: 768px) {
       display: none;
     }
   }
-  &__svg{
+
+  &__svg {
     width: 28px;
     height: 28px;
     stroke: $main-color;
