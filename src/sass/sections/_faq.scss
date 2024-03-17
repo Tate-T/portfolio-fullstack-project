@@ -1,6 +1,11 @@
 .faq {
-    background-color: #1c1d20;
-    overflow: hidden;
+    background-color: hsl(225, 7%, 12%);
+    padding-top: 0;
+
+    @media screen and (min-width: 1200px) {
+
+        min-height: 388px;
+    }
 
     &__title {
         font-weight: 600;
@@ -9,7 +14,17 @@
         letter-spacing: -0.02em;
         text-transform: uppercase;
         color: $title-color;
-        margin-bottom: 32px;
+        margin-bottom: 16px;
+
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 32px;
+        }
+    }
+
+    input {
+        position: absolute;
+        opacity: 0;
+        z-index: -1;
     }
 
     &__paragraph {
@@ -24,17 +39,105 @@
         line-height: 150%;
         letter-spacing: -0.02em;
         color: $title-color;
+        width: 343px;
+
+        @media screen and (min-width: 768px) {
+            width: 656px;
+        }
+    }
+
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+        @media screen and (min-width:1200px) {
+            flex-direction: row;
+        }
     }
 
     &__item input:checked ~ .faq__paragraph {
         max-height: 100px;
     }
 
+    &__item{
+        border: solid 1px rgba(250, 250, 250, 0.20);
+        padding-top: 20px;
+        padding-left: 4px;
+        padding-bottom: 20px;
+
+        @media screen and (min-width: 768px) {
+            padding-left: 32px;
+            padding-top: 32px;
+            min-width: 100%;
+        }
+
+        @media screen and (min-width: 1200px){
+            flex-basis: calc((100% - 0px) / 2);
+        }
+    }
+
+    &__item:nth-child(1){
+        padding-left: 4px;
+
+        @media screen and (min-width: 1200px) {
+            padding-left: 32px;
+        }
+    }
+
+    &__item:nth-child(3) {
+        padding-left: 4px;
+        
+        @media screen and (min-width: 1200px) {
+            padding-left: 32px;
+        }
+    }
+
+    &__item:nth-child(5) {
+        padding-left: 4px;
+        
+        @media screen and (min-width: 1200px) {
+            padding-left: 32px;
+        }
+    }
+
     &__subtitle {
+        display: flex;
         font-weight: 600;
         font-size: 20px;
         line-height: 150%;
         letter-spacing: -0.02em;
         color: $main-color;
+        margin-bottom: 26px;
+        text-align: left;
+        align-items: center;
+        padding-right: 20px;
+
+        @media screen and (min-width: 768px) {
+            padding-right: 32px;
+        }
+    }
+
+
+    &__subtitle::after {
+        content: url(../images/Button-2.png);
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        transition: all 0.35s;
+        margin-left: auto;
+    }
+
+    &__item input:checked + .faq__subtitle::after {
+        content: url(../images/Button.png);
+    }
+
+    &__item input:checked + .faq__line-left {
+        display: none;
+    }
+    
+
+    &__paragraph p {
+        padding-bottom: 26px;
     }
 }
