@@ -107,6 +107,14 @@
       width: 150px;
       height: 150px;
     }
+
+    &:hover {
+      background-color: rgba(224, 55, 63, 1);
+    }
+    
+    &:focus {
+      background-color: rgba(224, 55, 63, 1);
+    }
   }
 
   &__contacts-box {
@@ -128,6 +136,14 @@
     @media screen and (min-width: 768px) {
       padding: 18px 32px;
       height: 55px;
+    }
+
+    &:hover {
+      border: 1px solid #fafafa;
+    }
+
+    &:focus {
+      border: 1px solid #fafafa;
     }
   }
 }
